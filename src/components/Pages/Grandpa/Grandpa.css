@@ -1,0 +1,97 @@
+/* For heading */
+
+.nine h1 {
+    text-align:center; 
+    font-size:50px; 
+    text-transform:uppercase; 
+    color:#222; 
+    letter-spacing:1px;
+    font-family:"Playfair Display", serif; 
+    font-weight:400;
+    margin-top: 30px;
+  }
+  .nine h1 span {
+    margin-top: 30px;
+      font-size:15px; 
+      color:#444; 
+      word-spacing:1px; 
+      font-weight:normal; 
+      letter-spacing:2px;
+      text-transform: uppercase; 
+      font-family:"Raleway", sans-serif; 
+      font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h1 span:after,.nine h1 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+
+
+  /* For Carosel */
+
+
+  .carousel-images {
+    position: relative;
+    border-radius: 10px;
+    height: 400px;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carousel-images img {
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    border: #ff00008e solid 2px;
+  }
+  .slide_direction {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left,
+  .right {
+    background-color: #fb666675;
+    color: #fff;
+    padding: 4px 8px 3px 5px;
+    margin: 0 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+    height: 25px;
+    width: 25px;
+  }.left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .carousel-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .dot {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .active {
+    background-color: #fa2020;
+  }
+
+  /* For timeline */
